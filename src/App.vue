@@ -1,15 +1,20 @@
 <template>
-  <div><p>Hello World</p></div>
+  <div>
+    <!-- <Scene /> -->
+    <Gsap />
+  </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+// import Scene from './components/Scene.vue'
+import Gsap from './components/Gsap.vue'
 
 export default {
   name: 'app',
   components: {
-    // HelloWorld
-  }
+    Gsap,
+    // Scene
+  },
 }
 </script>
 
@@ -20,9 +25,16 @@ html {
 
 body {
   font-size: 100%;
+  margin: 0;
 }
 
+/* canvas {
+  width: 100%;
+  height: 100%;
+} */
+
 p {
+  margin: 0;
   font-size: 1.6rem;
 }
 </style>
